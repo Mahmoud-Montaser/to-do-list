@@ -19,7 +19,7 @@ add.onclick = function () {
     readFn();
     // remove value from input
     input.value = "";
-    location.reload();
+    // location.reload();
   }
 };
 
@@ -40,7 +40,8 @@ function createFn(textValue) {
 // readFunction
 
 function readFn() {
-  var arrayOfTasks = JSON.parse(window.localStorage.getItem("array"));
+  // var arrayOfTasks = JSON.parse(window.localStorage.getItem("array"));
+  outputList.innerHTML = "";
   arrayOfTasks.forEach((task) => {
     let li = document.createElement("li");
     let span = document.createElement("span");
